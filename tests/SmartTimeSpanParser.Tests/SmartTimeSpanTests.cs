@@ -7,10 +7,11 @@ namespace SmartTimeSpanParser.Tests
     {
         [Theory]
         [InlineData("2h", 2, 0, 0)]
-        [InlineData("1.5 days", 1, 12, 0)]
+        [InlineData("1.5 days", 36, 0, 0)] // 1.5 days = 36 hours
         [InlineData("45 minutes", 0, 45, 0)]
         [InlineData("30s", 0, 0, 30)]
         [InlineData("1h 30m", 1, 30, 0)]
+        [InlineData("2d 3h", 51, 0, 0)] // 2 days = 48 hours + 3 = 51 hours
         public void Parse_ValidInput_ReturnsExpectedTimeSpan(string input, int expectedHours, int expectedMinutes, int expectedSeconds)
         {
             var expected = new TimeSpan(expectedHours, expectedMinutes, expectedSeconds);
