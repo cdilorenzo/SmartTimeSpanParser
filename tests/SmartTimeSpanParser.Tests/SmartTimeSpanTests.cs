@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 
 namespace SmartTimeSpanParser.Tests
