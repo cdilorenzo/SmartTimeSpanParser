@@ -3,12 +3,24 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
     <LangVersion>latest</LangVersion>
-    <Version>1.0.3</Version> <!-- Change this to the version you want -->
-<PackageReadmeFile>README.md</PackageReadmeFile>
+    <Version>1.0.4</Version>
+
+    <!-- NuGet metadata -->
+    <PackageId>SmartTimeSpanParser</PackageId>
+    <Authors>Claudio Di Lorenzo</Authors>
+    <Description>Lightweight .NET library to parse human-friendly time span expressions like '2h', '15m', '1d 3h 20m'.</Description>
+    <PackageTags>TimeSpan;parser;natural language;duration;interval;human readable;dotnet;C#</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/cdilorenzo/SmartTimeSpanParser</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cdilorenzo/SmartTimeSpanParser</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-<ItemGroup>
-        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
-    </ItemGroup>
-  <!-- Include other necessary configurations -->
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
